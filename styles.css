@@ -10,26 +10,6 @@ header {
     padding: 10px 20px;
 }
 
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-}
-
 nav {
     display: flex;
     gap: 15px;
@@ -46,6 +26,7 @@ nav a {
 
 nav a:hover {
     background-color: #3e8e41;
+    text-decoration: underline;
 }
 
 nav .current {
@@ -55,4 +36,14 @@ nav .current {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: default;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
 }
