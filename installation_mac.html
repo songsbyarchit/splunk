@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,21 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Splunk-Webex Integration Guide</h1>
-        <div id="navbar"></div>
+        <h1>Installation (Mac)</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <span>Installation (Mac)</span>
+            <a href="setup_mac.html">Setup (Mac)</a>
+            <a href="hec_integration.html">Integrating with HEC</a>
+            <a href="api_integration.html">Integrating with API</a>
+            <a href="modular_input.html">Modular Input</a>
+        </nav>
     </header>
     <main>
-        <h2>Installation for macOS</h2>
-        <p>Follow these steps to install Splunk on macOS.</p>
+        <h2>Installing Splunk on macOS</h2>
+        <ol>
+            <li>Download Splunk from the official website.</li>
+            <li>Open the `.dmg` file and drag Splunk to the Applications folder.</li>
+            <li>Open a terminal and start Splunk using:
+                <code>sudo /Applications/splunk/bin/splunk start</code>.
+            </li>
+        </ol>
     </main>
     <footer>
         <p>&copy; 2024 Integration Guide</p>
     </footer>
-    <script src="script.js"></script>
-    <script>
-        document.getElementById('navbar').innerHTML = 
-            fetch('navbar.html').then(response => response.text());
-        document.getElementById('nav-installation').classList.add('current');
-    </script>
 </body>
 </html>
