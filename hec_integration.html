@@ -1,27 +1,32 @@
-TESTING THE PAGE
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Splunk-Webex Integration Guide</title>
+    <title>Integrating with HEC</title>
 </head>
 <body>
     <header>
-        <h1>Splunk-Webex Integration Guide</h1>
+        <h1>Integrating with HEC</h1>
         <nav>
+            <a href="index.html">Home</a>
             <a href="installation_mac.html">Installation (Mac)</a>
             <a href="setup_mac.html">Setup (Mac)</a>
-            <a href="hec_integration.html">Integrating with HEC</a>
             <a href="api_integration.html">Integrating with API</a>
             <a href="modular_input.html">Modular Input</a>
         </nav>
     </header>
     <main>
-        <h2>Welcome</h2>
-        <p>This guide will help you install and integrate Splunk with Webex in three different ways.</p>
+        <h2>Steps to Enable HEC</h2>
+        <p>To integrate Webex with Splunk using HEC:</p>
+        <ol>
+            <li>Enable HEC in Splunk settings.</li>
+            <li>Generate a token.</li>
+            <li>Use Webex events to send data to the HEC endpoint:
+                <code>https://splunk-server:8088</code>.
+            </li>
+        </ol>
     </main>
     <footer>
         <p>&copy; 2024 Integration Guide</p>
